@@ -20,6 +20,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Access Database
-const db = getFirestore(app)
+export const db = getFirestore(app)
 // Access notes collection
-const notesCollection = collection(db, "notes")
+export const notesCollection = collection(db, "notes")
